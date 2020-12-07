@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+            <h5 class="card-header">Match Found</h5>
+            <div class="card-body">
+                <h5 class="card-title">Please confirm the match.</h5>
+                <a href="/DENIED/{{transaction.id}}" class="btn btn-primary">Yip its me....</a>
+                <a href="/pepcheck/{{transaction.id}}" class="btn btn-info">Its not me....</a>
+            </div>
+            </div>
+        </div>
+   </div>
+
+{% endblock %}
